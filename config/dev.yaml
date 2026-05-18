@@ -1,0 +1,11 @@
+env: "dev"
+
+base_url: " https://automationexercise.com/api"
+
+timeout: 30
+
+headers:
+  Content-Type: "application/json"
+
+auth:
+  token: "dev_token"
