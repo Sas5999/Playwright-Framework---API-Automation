@@ -1,0 +1,11 @@
+env: "qa"
+
+base_url: "https://qa.api.com"
+
+timeout: 30
+
+headers:
+  Content-Type: "application/json"
+
+auth:
+  token: "qa_token"
