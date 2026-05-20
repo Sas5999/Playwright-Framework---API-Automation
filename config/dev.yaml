@@ -8,4 +8,4 @@ headers:
   Content-Type: "application/json"
 
 auth:
-  token: "dev_token"
+  token: "API_TOKEN"

@@ -1,5 +1,6 @@
 import yaml
 from pathlib import Path
+from src.core.auth.env_loader import EnvLoader
 
 
 class ConfigManager:
@@ -26,6 +27,16 @@ class ConfigManager:
                     raise ValueError(
                         f"Configuration file is empty: {config_path}"
                     )
+
+                auth_section = config_data.get("auth")
+
+                if auth_section:
+                    token_key = auth_section.get("token")
+
+                    if token_key:
+                        auth_section["token"] = (
+                            EnvLoader.get_env_variable(token_key)
+                        )
 
                 return config_data
 
