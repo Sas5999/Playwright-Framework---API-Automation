@@ -9,3 +9,6 @@ headers:
 
 auth:
   token: "API_TOKEN"
+
+
+log_level: "DEBUG"

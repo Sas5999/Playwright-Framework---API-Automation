@@ -9,3 +9,6 @@ headers:
 
 auth:
   token: "qa_token"
+
+
+log_level: "INFO"

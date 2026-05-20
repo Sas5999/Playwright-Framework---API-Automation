@@ -12,3 +12,4 @@ class EnvLoader:
         if value is None:
             raise ValueError(f"Environment variable '{key}' not found.")
         return value
+    
